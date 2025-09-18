@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68fc624d-2a28-4012-b7b2-432ba6a61f5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/lvrunner.java" afterDir="false" />
-    </list>
+    <list default="true" id="68fc624d-2a28-4012-b7b2-432ba6a61f5e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,46 +58,46 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GettingLinkURL.executor": "Run",
-    "Cucumber Java.Feature: Checkout.executor": "Run",
-    "Cucumber Java.Feature: cart.executor": "Run",
-    "Cucumber Java.Feature: login.executor": "Run",
-    "Cucumber Java.Feature: services.executor": "Run",
-    "Cucumber Java.Scenario: Book the appointment with single service.executor": "Run",
-    "Cucumber Java.Scenario: Hit the checkout url and logged In.executor": "Run",
-    "Cucumber Java.Scenario: Hit the checkout url.executor": "Run",
-    "Cucumber Java.Scenario: Landing on Service listing page.executor": "Run",
-    "Cucumber Java.Scenario: Navigate to cart page.executor": "Run",
-    "Cucumber Java.Scenario: Navigate to checkout page and book the Appointment with multi service.executor": "Run",
-    "Cucumber Java.Scenario: Navigate to checkout page and book the Appointment with single service.executor": "Run",
-    "Cucumber Java.Scenario: Navigate to checkout page and book the Appointment.executor": "Run",
-    "Cucumber Java.Scenario: Redirection to the service listing page from service details page.executor": "Run",
-    "Cucumber Java.Scenario: Select the calendar and availability time.executor": "Run",
-    "Cucumber Java.Scenario: Select the service and navigate to service details page (1).executor": "Run",
-    "Cucumber Java.Scenario: Select the service and navigate to service details page.executor": "Run",
-    "JUnit.crrunner.executor": "Run",
-    "JUnit.lvrunner.executor": "Run",
-    "JUnit.lvrunner.tSearDown.executor": "Run",
-    "JUnit.runner.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.UI_Account [clean].executor": "Run",
-    "Maven.UI_Account [compile].executor": "Run",
-    "Maven.UI_Account [test].executor": "Run",
-    "Maven.UI_Account [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "auto.test.manager.delay": "2000",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/TestNGStarting",
-    "rearrange.code.on.save": "true",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GettingLinkURL.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Checkout.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: cart.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: services.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Book the appointment with single service.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Hit the checkout url and logged In.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Hit the checkout url.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Landing on Service listing page.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Navigate to cart page.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Navigate to checkout page and book the Appointment with multi service.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Navigate to checkout page and book the Appointment with single service.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Navigate to checkout page and book the Appointment.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Redirection to the service listing page from service details page.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Select the calendar and availability time.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Select the service and navigate to service details page (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Select the service and navigate to service details page.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.crrunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.lvrunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.lvrunner.tSearDown.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.runner.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UI_Account [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UI_Account [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UI_Account [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.UI_Account [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;auto.test.manager.delay&quot;: &quot;2000&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/TestNGStarting&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\UI_Account\src\test\resources\Drivers" />
