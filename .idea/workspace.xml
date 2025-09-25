@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68fc624d-2a28-4012-b7b2-432ba6a61f5e" name="Changes" comment="" />
+    <list default="true" id="68fc624d-2a28-4012-b7b2-432ba6a61f5e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ServiceListingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ServiceListingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DriverFactory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DriverFactory/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/lvrunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/lvrunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/CheckoutStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/CheckoutStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/servicesStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/servicesStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Regression.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Regression.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +88,7 @@
     &quot;Cucumber Java.Scenario: Select the service and navigate to service details page (1).executor&quot;: &quot;Run&quot;,
     &quot;Cucumber Java.Scenario: Select the service and navigate to service details page.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.crrunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.failedRunner.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.lvrunner.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.lvrunner.tSearDown.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.runner.executor&quot;: &quot;Run&quot;,
@@ -89,7 +100,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;auto.test.manager.delay&quot;: &quot;2000&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lasvegas&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/TestNGStarting&quot;,
@@ -106,7 +117,22 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.lvrunner">
+    <configuration name="failedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Las_Vegas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.failedRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="lvrunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Las_Vegas" />
       <extension name="coverage">
@@ -124,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.failedRunner" />
         <item itemvalue="JUnit.lvrunner" />
       </list>
     </recent_temporary>

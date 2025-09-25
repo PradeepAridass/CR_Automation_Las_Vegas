@@ -104,6 +104,7 @@ public class CheckoutStep {
 
     @And("user saved the Guest One info")
     public void userSavedTheGuestOneInfo() throws InterruptedException {
+//        check.validateGuestDetails();
         check.SaveGuestInfo(1);
         Thread.sleep(2000);
     }
@@ -216,6 +217,18 @@ public class CheckoutStep {
 
     @And("user check the new reschedule date and time in the confirmation page")
     public void userCheckTheNewRescheduleDateAndTimeInTheConfirmationPage() {
-        
+
+    }
+
+    @And("user clicks the primary reservation toggle button for guest two")
+    public void userClicksThePrimaryReservationToggleButtonForGuestTwo() throws InterruptedException {
+        Thread.sleep(1000);
+        check.clickToggleButton(2);
+    }
+
+    @And("user clicks the primary reservation toggle button for guest three")
+    public void userClicksThePrimaryReservationToggleButtonForGuestThree() throws InterruptedException {
+        Thread.sleep(1000);
+        check.clickToggleButton(3);
     }
 }

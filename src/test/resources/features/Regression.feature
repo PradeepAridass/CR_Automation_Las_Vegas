@@ -53,6 +53,103 @@ Feature: Regression flow on Online booking
       | 2111111119 | 111119 |
 
 
+  Scenario Outline: Book the Multi guest appointment with two guest without gender preference
+    When user navigates to cart page
+    And user click the Continue Browsing CTA
+    When user select the pillar name to select the category
+    And user select the service to the cart page without gender flow
+    And User navigate to service details page
+    Then user select the duration
+    And user clicks Add to cart CTA
+    When user navigate to cart page
+    Then user clicks the Add new guest CTA
+    Then validate the new guest cart
+    And click Add service CTA on the new guest
+    Then user redirects to service listing page
+    And user select the service from another category for guest two without gender preference
+    Then User navigate to service details page
+    Then user select the duration from the page
+    And user clicks Add to cart CTA
+    Then user select the addons from the modal
+    And user selects the confirm preference CTA
+    When user navigate to cart page
+    When user checks the cart count after update the service
+    And user selects the available date for two guests
+    And check the group timeslots visible on the calendar section
+    And user selects the available group time slots
+    Then user clicks the Continue to checkout CTA
+    Then user lands on signup checkout page
+    And user toggle to the login page
+    Then user enter the registered number "<mobileno>"
+    And user clicks get verify code CTA
+    And user enter the code "<vcode>"
+    Then user clicks the Proceed to checkout CTA
+    Then user lands on checkout page
+    And user saved the Guest One info
+    And user enter the Guest Two details and saved
+    And user saved the Guest Two info
+    And user checks the payment card added
+    Then user clicks book CTA
+    Then user navigates to confirmation page
+    And user validate the reservartion number generated
+    Examples:
+      | mobileno   | vcode  |
+      | 2111111119 | 111119 |
+
+  @MM
+  Scenario Outline: Book the Multi guest appointment with three guest with and without gender preference
+    When user navigates to cart page
+    And user click the Continue Browsing CTA
+    When user select the pillar name to select the category
+    And user select the service to the cart page without gender flow
+    And User navigate to service details page
+    Then user select the duration
+    And user clicks Add to cart CTA
+    When user navigate to cart page
+    Then user clicks the Add new guest CTA
+    Then validate the new guest cart
+    And click Add service CTA on the new guest
+    Then user redirects to service listing page
+    And user select the service from another category for guest two without gender preference
+    Then User navigate to service details page
+    Then user select the duration from the page
+    And user clicks Add to cart CTA
+    Then user select the addons from the modal
+    And user selects the confirm preference CTA
+    When user navigate to cart page
+    When user checks the cart count after update the service
+    Then validate the new guest cart for adding Multi guest
+    And click Add service CTA on the new guest
+    Then user redirects to service listing page
+    And user select the service from another category for guest three without gender preference
+    Then User navigate to service details page for three
+    Then user select the duration from the page for three
+    And user clicks Add to cart CTA
+    When user navigate to cart page
+    When user checks the cart count after update the service
+    And user selects the available date for two guests
+    And check the group timeslots visible on the calendar section
+    And user selects the available group time slots
+    Then user clicks the Continue to checkout CTA
+    Then user lands on signup checkout page
+    And user toggle to the login page
+    Then user enter the registered number "<mobileno>"
+    And user clicks get verify code CTA
+    And user enter the code "<vcode>"
+    Then user clicks the Proceed to checkout CTA
+    Then user lands on checkout page
+    And user saved the Guest One info
+    And user enter the Guest Two details and saved
+    And user saved the Guest Two info
+    And user checks the payment card added
+    Then user clicks book CTA
+    Then user navigates to confirmation page
+    And user validate the reservartion number generated
+    Examples:
+      | mobileno   | vcode  |
+      | 2111111119 | 111119 |
+
+
   Scenario Outline: Remove one of the guest from two guests and convert into Single guest flow booking
     When user navigates to cart page
     And user click the Continue Browsing CTA
@@ -236,7 +333,7 @@ Feature: Regression flow on Online booking
     And user saved the Guest One info
     And user enter the Guest Two details and saved
     And user saved the Guest Two info
-    And user enter the Guest Three details and saved
+    And user clicks the primary reservation toggle button for guest three
     And user saved the Guest Three info
     And user checks the payment card added
     Then user clicks book CTA
@@ -365,9 +462,9 @@ Feature: Regression flow on Online booking
     Then user clicks the Proceed to checkout CTA
     Then user lands on checkout page
     And user saved the Guest One info
-    And user enter the Guest Two details and saved
+    And user clicks the primary reservation toggle button for guest two
     And user saved the Guest Two info
-    And user enter the Guest Three details and saved
+    And user clicks the primary reservation toggle button for guest three
     And user saved the Guest Three info
     Then user refresh the page
     Then select the new date on the calendar in the checkout
@@ -553,9 +650,9 @@ Feature: Regression flow on Online booking
     Then user clicks the Continue to checkout CTA
     Then user lands on checkout page
     And user saved the Guest One info
-    And user enter the Guest Two details and saved
+    And user clicks the primary reservation toggle button for guest two
     And user saved the Guest Two info
-    And user enter the Guest Three details and saved
+    And user clicks the primary reservation toggle button for guest three
     And user saved the Guest Three info
     Then user refresh the page
     Then select the new date on the calendar in the checkout
@@ -609,7 +706,6 @@ Feature: Regression flow on Online booking
     Then user check the current schedule date and time
     Then user select the new date and available time to reschedule
     And user click the update CTA to update the calendar in the reschedule page
-    And user check the new reschedule date and time in the confirmation page
     And user check the new schedule date and time
     And user click the Reschedule CTA
     Then user navigates to confirmation page after reschedule
@@ -658,7 +754,7 @@ Feature: Regression flow on Online booking
     Then user clicks the Proceed to checkout CTA
     Then user lands on checkout page
     And user saved the Guest One info
-    And user enter the Guest Two details and saved
+    And user clicks the primary reservation toggle button for guest two
     And user saved the Guest Two info
     And user checks the payment card added
     Then user clicks book CTA

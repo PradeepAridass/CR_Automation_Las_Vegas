@@ -13,13 +13,14 @@ import java.util.List;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepdefinitions", "hooks"},
-        tags = "@Regression",
-//        tags = "@M",
-//        tags = "@failed",
+//        tags = "@Regression",
+//        tags = "@MM",
+        tags = "@fail",
         plugin = {"pretty",
                 "json:target/CucumberReport/CanyonRanch.json",
                 "html:target/CucumberReport/CanyonRanch.html",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "rerun:target/failedScenarios/failedCases.txt"
         },
         monochrome = true
 

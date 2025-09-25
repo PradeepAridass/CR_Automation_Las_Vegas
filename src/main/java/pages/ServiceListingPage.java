@@ -131,7 +131,7 @@ public class ServiceListingPage {
     }
 
     public void addToCart() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(addCart));
         driver.findElement(addCart).click();
     }
@@ -198,7 +198,7 @@ public class ServiceListingPage {
     public void selectAnyService(String service) throws InterruptedException {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//p[text()='" + service + "']")).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     public void selectAnyCategory(String category) {

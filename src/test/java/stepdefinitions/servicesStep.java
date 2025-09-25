@@ -59,7 +59,6 @@ public class servicesStep {
         Thread.sleep(1500);
         service.selectedCategoryService();
         System.out.println("Service Details page: " + Variables.BRIGHT_GREEN + service.validateServiceDetailsPage() + Variables.RESET);
-
     }
 
     @Then("user clicks the category text and redirects to service listing page")
@@ -77,6 +76,7 @@ public class servicesStep {
 
     @And("user clicks Add to cart CTA")
     public void UserClicksAddToCartCTA() throws InterruptedException {
+        Thread.sleep(2000);
         service.addToCart();
         Thread.sleep(1000);
     }
@@ -332,8 +332,36 @@ public class servicesStep {
         Thread.sleep(1000);
     }
 
-    @And("user select the service from fort-worth and add to cart")
-    public void userSelectTheServiceFromFortWorthAndAddToCart() {
-//        service.selectService("Massage", "Canyon Stone Massage", "Male");
+    @And("user select the service to the cart page without gender flow")
+    public void userSelectTheServiceToTheCartPageWithoutGenderFlow() throws InterruptedException {
+        service.selectAnyCategory("Makeup");
+        service.selectAnyService("Eyes Only");
+
+    }
+
+    @And("user select the service from another category for guest two without gender preference")
+    public void userSelectTheServiceFromAnotherCategoryForGuestTwoWithoutGenderPreference() throws InterruptedException {
+        service.selectAnyCategory("Facial Treatments");
+        service.selectAnyService("Collagen Lifting Facial");
+    }
+
+    @And("user select the service from another category for guest three without gender preference")
+    public void userSelectTheServiceFromAnotherCategoryForGuestThreeWithoutGenderPreference() throws InterruptedException {
+        service.selectAnyCategory("Barber");
+        service.selectAnyService("Barber Beard Trim and Shave");
+    }
+
+    @Then("User navigate to service details page for three")
+    public void userNavigateToServiceDetailsPageForThree() throws InterruptedException {
+        Thread.sleep(1500);
+        service.selectedCategoryService();
+        System.out.println("Service Details page: " + Variables.BRIGHT_GREEN + service.validateServiceDetailsPage() + Variables.RESET);
+
+    }
+
+    @Then("user select the duration from the page for three")
+    public void userSelectTheDurationFromThePageForThree() throws InterruptedException {
+        service.selectDuration();
+        Thread.sleep(1000);
     }
 }

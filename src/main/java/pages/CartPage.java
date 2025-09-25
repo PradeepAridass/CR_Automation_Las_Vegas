@@ -149,7 +149,7 @@ public class CartPage {
     }
 
     public void validateTimeslot() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(groupTimeSlots));
         if (driver.findElement(groupTimeSlots).isDisplayed()) {
             System.out.println(Variables.BRIGHT_GREEN + "Time slots is available" + Variables.RESET);

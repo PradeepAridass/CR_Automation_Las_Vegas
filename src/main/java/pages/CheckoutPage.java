@@ -28,6 +28,7 @@ public class CheckoutPage {
     private final By reservationNo = By.xpath("//div[@class='styles_numberContainer__Bo4QZ']/div[2]");
     private final By calendarNext = By.xpath("//button[@aria-label='Next']");
     private final By updateCTA = By.xpath("//div[@class='styles_ctaButtons__1_QmJ']/button[2]");
+    private final By primaryToggleCTA = By.xpath("./ancestor::div[contains(@class,'styles_sectionTitle')]//div[contains(@class,'styles_toggleButton')]");
     WebDriver driver;
 
 
@@ -82,6 +83,12 @@ public class CheckoutPage {
 
     public String getCheckout() {
         return driver.findElement(landingCheckout).getText();
+    }
+
+    public void validateGuestDetails() {
+        WebElement guestDetails = driver.findElement(By.xpath("//div[@class='styles_guestDetails__2wnp2']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+        wait.until(ExpectedConditions.presenceOfElementLocated((By) guestDetails));
     }
 
     public String validatePopup() {
@@ -325,6 +332,11 @@ public class CheckoutPage {
             System.out.println(Variables.CYAN + details + Variables.RESET);
         }
         return null;
+    }
+
+    public void clickToggleButton(int guest) {
+        WebElement guestNumber = driver.findElement(By.xpath("//span[text()='Guest " + guest + " information']"));
+        guestNumber.findElement(primaryToggleCTA).click();
     }
 
 //    public List<String> newScheduleDateTime() {
